@@ -64,6 +64,11 @@
 % Allow click-through chapters, sections, and references
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
 
+% Format numbers
+\usepackage[group-separator={,}]{siunitx} % If commas as separators
+\usepackage{siunitx} % https://texdoc.org/serve/siunitx/0
+
+
 % PDF metadata with table of contents, list of figures, and list of tables clickable
 \hypersetup{
   pdfauthor={Your Name},
@@ -121,6 +126,18 @@
 
 % Control the appendix
 \usepackage[title, titletoc, header]{appendix}
+
+% Import SVGs
+\usepackage{svg} % If images do not work (e.g., missing pattern) convert to PNG using inkscapeformat=png
+
+% LISTS
+
+% \begin{enumerate}[I] = I, II, III, etc.
+% \begin{enumerate}[i] = i, ii, iii, etc.
+\usepackage{enumerate}
+
+% SVG
+\usepackage{svg}
 
 \usepackage[acronym]{glossaries}
 \makeglossaries
